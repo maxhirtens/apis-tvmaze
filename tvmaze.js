@@ -77,7 +77,7 @@ $clearButton.on('click', function(){
 
 async function getEpisodesOfShow(id) {
   let response = await axios({
-    url: `http://api.tvmaze.com/shows/${id}/episodes`,
+    url: `https://api.tvmaze.com/shows/${id}/episodes`,
     method: 'GET'
   });
     let episodes = (response.data.map(result => ({
